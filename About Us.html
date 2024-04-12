@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to top, #edbe9f,#ffe6ee);
+      font-family: "Roboto", sans-serif;
+    }
+.title{
+  height: 20vh;
+}
+    .title p {
+      font-size: 70px;
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255,165,0);
+      margin-top: 200px;
+    }
+
+    .about {
+      display: flex;
+      margin: 2% auto;
+      position: relative;
+    }
+
+    .left_about {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+
+    }
+
+    .left_about img {
+      margin-left: 50px;
+      width: 600px;
+    }
+
+    .right_about {
+      width: 600px;
+      padding: 20px;
+    }
+
+    .right_about p {
+      margin-top: 100px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="image/logo.svg" alt="Logo" width="50">
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/Gallery.html">Gallery</a>
+      <a href="/Contact.html">Contact</a>
+      <a href="/FAQs.html">FAQs</a>
+      <a href="/About Us.html">About Us</a>
+    </div>
+  </nav>
+
+  <div class="title">
+    <p>ABOUT US</p>
+  </div>
+  <div class="about">
+    <div class="left_about">
+      <img src="/image/shop.jpg" alt="">
+    </div>
+    <div class="right_about">
+      <p>Welcome to Chilling Chilling Ice Cream, where frozen delights meets happiness in every scoop!<br><br>
+        We started because we love ice cream, and we want to share that love with all of you.
+        We make them with love and the best ingredients.Whether your're chilling with friends or enjoying a quit moment,our Chilling Chilling ice cream is perfect.<br><br>
+        So, Visit us at Chilling Chilling Ice Cream anytimr and make yourself fill with joy.
+      </p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><strong>Address:</strong> Pepsicola, Kathmandu, Nepal</li>
+        <li><strong>Phone:</strong> +9779851223631, 01-4796657</li>
+        <li><strong>Email:</strong> <a href="chillingchillingicecream.com">chillingchillingicecream.com</a></li>
+      </ul>
+    </div>
+    <div class="newsletter-form">
+      <h2>Newsletter Signup</h2>
+      <p>Sign up today to know more about our platform and services.</p>
+      <form action="submit-newsletter.php" method="post">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">SigUP</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

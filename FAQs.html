@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream FAQs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color:#ffe6ee;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .faq-box {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #666;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    .answer {
+      display: none;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="image/logo.svg" alt="Logo" width="50">
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/Gallery.html">Gallery</a>
+      <a href="/Contact.html">Contact</a>
+      <a href="/FAQs.html">FAQs</a>
+      <a href="/About Us.html">About Us</a>
+    </div>
+  </nav>
+
+  <h1>Frequently Asked Questions</h1>
+  <p><i>Please, Double Click the question to get the answer.</i></p>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer1')">1. What flavors of ice cream do you offer?</h2>
+    <div class="answer" id="answer1">
+      <p>We offer a wide range of flavors to tantalize your taste buds! From classic favorites like vanilla and
+        chocolate to unique creations like salted caramel swirl and mango passionfruit sorbet, there's something for
+        everyone to enjoy.</p>
+    </div>
+  </div>
+
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer2')">2. Can I purchase gift cards for your ice cream shop?</h2>
+    <div class="answer" id="answer2">
+      <p> Yes, we offer gift cards that make the perfect treat for any ice cream lover. Stop by our shop to purchase one today!
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer3')">3. Can I find nutritional information for your ice cream flavors?</h2>
+    <div class="answer" id="answer3">
+      <p>Yes, we provide nutritional information for all our ice cream flavors, including calorie count, fat content, and more, to help you make informed choices
+      </p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer4')">4. Do you have any seasonal flavors?</h2>
+    <div class="answer" id="answer4">
+      <p>Yes, we regularly introduce seasonal flavors inspired by the time of year and using fresh, seasonal ingredients for a unique and delicious experience.
+      </p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer5')">5. Can I order custom ice cream cakes for special occasions?</h2>
+    <div class="answer" id="answer5">
+      <p>Absolutely! We offer custom ice cream cakes made to order for birthdays, anniversaries, or any special celebration. Just let us know your preferences, and we'll create a one-of-a-kind cake for you.
+      </p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer6')">6. What steps do you take to ensure the quality and safety of your ice cream?</h2>
+    <div class="answer" id="answer6">
+      <p>We follow strict quality control measures and adhere to food safety standards to ensure that our ice cream is not only delicious but also safe to enjoy.
+      </p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer7')">7. Are there any sugar-free options available for those watching their sugar intake?</h2>
+    <div class="answer" id="answer7">
+      <p>Yes, we offer sugar-free options sweetened with natural sweeteners or sugar substitutes for those looking to indulge without the added sugar.
+      </p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer8')">8. Do you offer any discounts or loyalty programs for frequent customers?</h2>
+    <div class="answer" id="answer8">
+      <p>Yes, we have a loyalty program that rewards our frequent customers with discounts, special offers, and exclusive perks as a token of appreciation for their continued support.</p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer9')">9.  Can I purchase your ice cream online for delivery?</h2>
+    <div class="answer" id="answer9">
+      <p> Yes, you can order our ice cream online for delivery straight to your doorstep. Just visit our website and explore our selection of flavors available for delivery.</p>
+    </div>
+  </div>
+  <div class="faq-box">
+    <h2 onclick="toggleAnswer('answer10')">10. What inspired you to start an ice cream shop?</h2>
+    <div class="answer" id="answer10">
+      <p>Our love for ice cream and the joy it brings to people's lives inspired us to start our own shop, where we can share our passion for delicious frozen treats with the world.</p>
+    </div>
+  </div>
+
+
+  <!-- Other questions and answers follow the same structure -->
+
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById(id);
+      if (answer.style.display === 'none') {
+        answer.style.display = 'block';
+      } else {
+        answer.style.display = 'none';
+      }
+    }
+  </script>
+
+    <div class="contact">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><strong>Address:</strong> Pepsicola, Kathmandu, Nepal</li>
+        <li><strong>Phone:</strong> +9779851223631, 01-4796657</li>
+        <li><strong>Email:</strong> <a href="chillingchillingicecream.com">chillingchillingicecream.com</a></li>
+      </ul>
+    </div>
+    <div class="newsletter-form">
+      <h2>Newsletter Signup</h2>
+      <p>Sign up today to know more about our platform and services.</p>
+      <form action="submit-newsletter.php" method="post">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">SigUP</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

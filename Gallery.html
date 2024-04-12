@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galary</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 350px;
+            height: 500px;
+            /* background-color: #3498db; */
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box img {
+            max-width: 100%;
+            max-height: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .box a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/logo.svg" alt="Logo" width="50">
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/Gallery.html">Gallery</a>
+            <a href="/Contact.html">Contact</a>
+            <a href="/FAQs.html">FAQs</a>
+            <a href="/About Us.html">About Us</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <a href="image/galary1.jpg" target="_blank">
+            <img src="image/galary1.jpg" alt="">
+            <p>Introducing our Combo Ice Cream Trio: a delightful blend of vanilla, lime, and strawberry flavors in every scoop. Creamy, refreshing, and irresistibly sweet, it's the perfect treat for any craving. Try it today for a burst of flavor that will leave you wanting more!</p>
+        </div>
+        <div class="box">
+            <a href="image/galary2.jpg" target="_blank">
+            <img src="image/galary2.jpg" alt="">
+            <p>Introducing our indulgent Chocolate Ice Cream: a rich and velvety delight that will satisfy your sweetest cravings. Made with premium cocoa and fresh ingredients, each spoonful offers a decadent experience that chocolate lovers adore. Treat yourself to the pure bliss of our Chocolate Ice Cream today and indulge in a timeless classic that never disappoints.
+            </p>
+        </div>
+        <div class="box">
+            <a href="image/galary4.jpg" target="_blank">
+            <img src="image/galary4.jpg" alt="">
+            <p>Introducing our luscious Strawberry Ice Cream: a fruity and creamy delight that promises to tantalize your taste buds. Crafted with ripe strawberries and the finest ingredients, each scoop offers a burst of refreshing sweetness that captures the essence of summer. Treat yourself to the pure joy of our Strawberry Ice Cream today and savor a deliciously fruity experience that will leave you craving more.</p>
+        </div>
+        <div class="box">
+            <a href="image/galary31.jpg" target="_blank">
+            <img src="image/galary31.jpg" alt="">
+            <p>Introducing our creamy Vanilla Ice Cream: a timeless classic that's simply irresistible. Made with the finest Madagascar vanilla beans and fresh cream, each scoop delivers a smooth and luxurious flavor that's perfect for any occasion. Indulge in the pure delight of our Vanilla Ice Cream today and experience the rich and velvety taste that has been loved for generations.
+            </p>
+        </div>
+        <div class="box">
+            <a href="image/galary5.png" target="_blank">
+            <img src="image/galary5.png" alt="">
+            <p>Introducing our refreshing Mint Ice Cream: a cool and invigorating treat that's sure to brighten your day. Made with real mint extract and creamy dairy, each spoonful offers a burst of refreshing flavor that leaves you feeling rejuvenated. Dive into the delightful combination of minty freshness and creamy indulgence with our Mint Ice Cream today, and experience a truly revitalizing taste sensation.
+            </p>
+        </div>
+        <div class="box">
+            <a href="image/galary6.png" target="_blank">
+            <img src="image/galary6.png" alt="">
+            <p>Introducing our Combo Ice Cream Trio: a delightful blend of creamy vanilla, rich chocolate, and luscious strawberry flavors in every scoop. Indulge in the perfect combination of classic favorites for a delicious treat that satisfies every craving. Try it today and experience the ultimate ice cream delight!</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <ul>
+            <li><strong>Address:</strong> Pepsicola, Kathmandu, Nepal</li>
+            <li><strong>Phone:</strong> +9779851223631, 01-4796657</li>
+            <li><strong>Email:</strong> <a href="chillingchillingicecream.com">chillingchillingicecream.com</a></li>
+          </ul>
+        </div>
+        <div class="newsletter-form">
+          <h2>Newsletter Signup</h2>
+          <p>Sign up today to know more about our platform and services.</p>
+          <form action="submit-newsletter.php" method="post">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">SigUP</button>
+          </form>
+        </div>
+      </div>
+    
+</body>
+
+</html>
